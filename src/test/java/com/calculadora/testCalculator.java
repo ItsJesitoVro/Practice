@@ -18,6 +18,11 @@ public class testCalculator {
     @Test
     void test3_suma_de_2_numeros_separados_por_coma() throws Exception {
         simplecalculator simplecalculator = new simplecalculator();
-        Assertions.assertEquals(5, simplecalculator.add("2,3"));
+        Assertions.assertEquals(6, simplecalculator.add("2,4"));
+    }
+    @Test
+    void test4_suma_sin_rango_de_cadena_separados_por_coma() throws Exception {
+        simplecalculator simplecalculator = new simplecalculator();
+        Assertions.assertEquals(15, simplecalculator.add("1,2,3,4,5"));
     }
 }
